@@ -1,6 +1,8 @@
+[![DOI](https://img.shields.io/badge/DOI-doi.org%2F10.1063%2F5.0008368-blue)](https://aip.scitation.org/doi/10.1063/5.0008368)
+
 # pychemcurv-app
 
-This repository contains a web application using the pychemcurv module 
+This repository contains a web application using the [pychemcurv module](https://github.com/gVallverdu/pychemcurv)
 for local curvature analyzes of molecules. It aims to use the pychemcurv 
 package and visualize the geometrical or chemical atomic quantities mapped on 
 the chemical structure of your system.
@@ -10,6 +12,17 @@ The application is available at this address: https://pychemcurv.herokuapp.com/
 Demo video:
 
 [![youtube demo video](https://img.youtube.com/vi/q7UO5Gou-lw/0.jpg)](https://www.youtube.com/watch?v=q7UO5Gou-lw)
+
+## Citing pychemcurv
+
+Please consider to cite the following paper when using the application or the
+[pychemcurv module](https://github.com/gVallverdu/pychemcurv).
+
+* Julia Sabalot-Cuzzubbo, Germain Salvato Vallverdu, Didier Bégué and Jacky Cresson
+*Relating the molecular topology and local geometry: Haddon’s pyramidalization angle and the Gaussian curvature*, 
+J. Chem. Phys. **152**, 244310 (2020).
+
+[![DOI](https://img.shields.io/badge/DOI-doi.org%2F10.1063%2F5.0008368-blue)](https://aip.scitation.org/doi/10.1063/5.0008368)
 
 ## Run the application locally
 
@@ -64,7 +77,6 @@ if __name__ == '__main__':
     # app.run_server(debug=False)
 ```
 
-
 ## TODO
 
 * Manage file format
@@ -72,3 +84,18 @@ if __name__ == '__main__':
 * Show/Hide atom names = species + index
 * Ball and stick representation
 * Zoom fit the box at the beginning
+
+## Licence and contact
+
+This software was developped at the [Université de Pau et des Pays de l'Adour (UPPA)](http://www.univ-pau.fr)
+in the [Institut des Sciences Analytiques et de Physico-Chimie pour l'Environement et les Matériaux (IPREM)](http://iprem.univ-pau.fr)
+and the [Institut Pluridisciplinaire de Recherches Appliquées (IPRA)](http://ipra.univ-pau.fr/) and is distributed under the 
+[MIT licence](https://opensource.org/licenses/MIT).
+
+## Authors
+
+* Germain Salvato Vallverdu: `germain.vallverdu@univ-pau.fr <germain.vallverdu@univ-pau.fr>`_
+* Julia Sabalot-cuzzubbo `julia.sabalot@univ-pau.fr  <sabalot.julia@univ-pau.fr>`_
+* Didier Bégué: `didier.begue@univ-pau.fr <didier.begue@univ-pau.fr>`_
+* Jacky Cresson: `jacky.cresson@univ-pau.fr <jacky.cresson@univ-pau.fr>`_
+
