@@ -13,17 +13,6 @@ Demo video:
 
 [![youtube demo video](https://img.youtube.com/vi/q7UO5Gou-lw/0.jpg)](https://www.youtube.com/watch?v=q7UO5Gou-lw)
 
-## Citing pychemcurv
-
-Please consider to cite the following paper when using the application or the
-[pychemcurv module](https://github.com/gVallverdu/pychemcurv).
-
-* Julia Sabalot-Cuzzubbo, Germain Salvato Vallverdu, Didier Bégué and Jacky Cresson
-*Relating the molecular topology and local geometry: Haddon’s pyramidalization angle and the Gaussian curvature*, 
-J. Chem. Phys. **152**, 244310 (2020).
-
-[![DOI](https://img.shields.io/badge/DOI-doi.org%2F10.1063%2F5.0008368-blue)](https://aip.scitation.org/doi/10.1063/5.0008368)
-
 ## Run the application locally
 
 You can run the application locally once you have installed pychemcurv and
@@ -31,36 +20,44 @@ the dash dependencies of the application. The easiest way to this is to use
 the `requirements.txt` or the `environment.yml` files to set up a python 
 environment.
 
-Using pip
+Using pip, after you create a new environment
 
     pip install -r requirements.txt
 
-Using conda
+Using conda, the following will create a new environment named `curv` and
+install all dependencies inside, including pychemcurv.
 
     conda env create -f environment.yml
 
-This will create an environment named `curv` and install all dependecies. 
-Then, to run the application, change to `pychemcurv/app` folder and run the
+Then, download the application and run it by executing the 
 `app.py` file.
 
-    conda activate curv
-    python app.py
+```sh
+git clone https://github.com/gVallverdu/pychemcurv-app.git
+cd pychemcurv-app
+conda activate curv   # if you need to activate an environment
+python app.py
+```
 
-This will output something like this. Open the url to use the application.
+This will output something like this. Open the url http://127.0.0.1:8050/ 
+(or the one provided in the terminal) to use the application.
 
-    [user@computer] (curv) > $ python app.py
-    Running on http://127.0.0.1:8050/
-    Debugger PIN: 065-022-191
-    * Serving Flask app "app" (lazy loading)
-    * Environment: production
-    WARNING: This is a development server. Do not use it in a production deployment.
-    Use a production WSGI server instead.
-    * Debug mode: on
+```sh
+[user@computer] (curv) > $ python app.py
+Running on http://127.0.0.1:8050/
+
+Debugger PIN: 065-022-191
+* Serving Flask app "app" (lazy loading)
+* Environment: production
+  WARNING: This is a development server. Do not use it in a production deployment.
+  Use a production WSGI server instead.
+* Debug mode: on
+````
 
 You can switch off the debug mode by setting `debug=False` on the last line of 
 the `app.py` file.
 
-### Common error if running application locally
+### Common error when running the application locally
 
 If the application does not start with an error such as:
 
@@ -77,6 +74,10 @@ if __name__ == '__main__':
     # app.run_server(debug=False)
 ```
 
+There you can also switch on and off the debug mode keeping the `host` url.
+
+and run the application again.
+
 ## TODO
 
 * Manage file format
@@ -84,6 +85,18 @@ if __name__ == '__main__':
 * Show/Hide atom names = species + index
 * Ball and stick representation
 * Zoom fit the box at the beginning
+
+## Citing pychemcurv
+
+Please consider to cite the following paper when using the application or the
+[pychemcurv module](https://github.com/gVallverdu/pychemcurv).
+
+* Julia Sabalot-Cuzzubbo, Germain Salvato Vallverdu, Didier Bégué and Jacky Cresson
+*Relating the molecular topology and local geometry: Haddon’s pyramidalization angle and the Gaussian curvature*, 
+J. Chem. Phys. **152**, 244310 (2020).
+
+[![DOI](https://img.shields.io/badge/DOI-doi.org%2F10.1063%2F5.0008368-blue)](https://aip.scitation.org/doi/10.1063/5.0008368)
+
 
 ## Licence and contact
 
