@@ -3,8 +3,8 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python>=3.8
-  - pip>=20.*
+  - python==3.9.18
+  - pip>=23.*
   - ase>=3.*
   - jupyter>=1.*
   - matplotlib>=3.*
