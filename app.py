@@ -788,5 +788,5 @@ def plot_data(selected_data1, data_ts, selected_data2, nbins, data):
 
 
 if __name__ == '__main__':
-    # app.run_server(debug=True, host='127.0.0.1')
-    app.run_server(debug=False)
+    app.run_server(debug=True, host='127.0.0.1')
+    # app.run_server(debug=False)

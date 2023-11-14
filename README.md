@@ -7,7 +7,7 @@ for local curvature analyzes of molecules. It aims to use the pychemcurv
 package and visualize the geometrical or chemical atomic quantities mapped on 
 the chemical structure of your system.
 
-The application is available at this address: https://pychemcurv.herokuapp.com/
+The live demo of the application is available here: https://pychemcurv.onrender.com
 
 Demo video:
 
@@ -96,6 +96,12 @@ Please consider to cite the following paper when using the application or the
 J. Chem. Phys. **152**, 244310 (2020).
 
 [![DOI](https://img.shields.io/badge/DOI-doi.org%2F10.1063%2F5.0008368-blue)](https://aip.scitation.org/doi/10.1063/5.0008368)
+
+* Julia Sabalot-Cuzzubbo, N. Cresson, Germain Salvato Vallverdu, Didier Bégué and Jacky Cresson
+*Haddon’s POAV2 vs POAV theory for non-planar molecules*, 
+J. Chem. Phys. **159**, 174109 (2023).
+
+[![DOI](https://img.shields.io/badge/DOI-doi.org%2F10.1063%2F5.0008368-blue)](https://aip.scitation.org/doi/10.1063/5.0170800)
 
 
 ## Licence and contact
